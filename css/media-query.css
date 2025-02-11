@@ -1,0 +1,207 @@
+@media only screen and (max-width:1024px){
+    .grid-shop-images {
+        grid-template-columns: repeat(4,25%);
+    }
+    .shop-item img {
+        object-fit: cover;
+    }
+    .shop-item1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .shop-item2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .shop-item3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .shop-item4 {
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .shop-item5 {
+        grid-column: 1/2;
+        grid-row: 2/2;
+    }
+    .shop-item6 {
+        grid-column: 2/3;
+        grid-row: 2/2;
+    }
+    .shop-item7 {
+        grid-column: 3/4;
+        grid-row: 2/2;
+    }
+    .shop-item8 {
+        grid-column: 4/5;
+        grid-row: 2/2;
+    }
+
+}
+@media only screen and (max-width:768px){
+    /* =============header============== */
+    header{
+        display: none;
+    }
+    /* ================bourger-menu=============== */
+    .bourger-menu_logo{
+        width: 50px;
+        height: 50px;
+    }
+    .bourger-menu_logo a img{
+        width: 100%;
+    }
+    .mobile-menu{
+    display: block;
+    width: 100%;
+    padding:5px 20px;
+    background-color: #EEEFF5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    }
+    @font-face {
+        font-family: logo-font;
+        src: url(../fonts/Maghrib-MVZpx.ttf);
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        color: #aaa;
+        font-family: logo-font;
+        text-transform: capitalize;
+        font-size: 20px;
+        letter-spacing: 15px;
+        animation: logo-anime 3s infinite;
+    }
+    @keyframes logo-anime {
+        20%{
+            color: #EEEFF5;
+        }
+        40%{
+            color: #aaa;
+            text-shadow: 0px 0px 6px rgba(15, 14, 14, 0.7)
+        }
+        60%{
+            color: #EEEFF5;
+        }
+        80%{
+            color: #aaa;
+            text-shadow: 0px 0px 6px rgba(20, 18, 18, 0.7)
+        }
+        100%{
+            color: #EEEFF5;
+        }
+    }
+    /* ==============first grid section============== */
+    .grid-collage {
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        grid-template-rows: unset;
+    }
+    .grid-collage .item {
+        height: 150px;
+        grid-column: unset;
+        grid-row: unset;
+    }
+    .item2-content img,
+    .item4-content img,
+    .item8-content img{
+        display: none;
+    }
+
+    .item2 p, .item4 p, .item8 p {
+    color: rgb(7, 6, 20);
+    font-size: 11px;
+    }
+    .item2{
+        background: url(../images/Icon-2.png);
+    }
+    .item4{
+        background: url(../images/Icon-3.png);
+    }
+    .item8{
+        background: url(../images/Icon-4.png);
+    }
+    .item2,
+    .item4,
+    .item8{
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /* ===========grid-shop images============= */
+    .grid-shop-images {
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        grid-template-rows: repeat(3,250px);
+    }
+    .grid-shop-images .shop-item {
+        grid-column: unset;
+        grid-row: unset;
+    }
+    /* =========discover========== */
+    .discover{
+        padding: 50px 0;
+    }
+    /* ==========footer============ */
+    .footer-content{
+        align-items: center;
+        flex-direction: column;
+    }
+    .social-share a:nth-of-type(1) i,
+    .social-share a:nth-of-type(2) i,
+    .social-share a:nth-of-type(3) i{
+        font-size: 25px;
+    }
+    .address{
+        font-size: 14px;
+        text-align: center;
+    }
+    .social-share{
+        margin: 10px 0;
+    }
+}
+
+
+@media only screen and (max-width:481px){
+    /* ==============mobile menu============== */
+.mobile-menu_heading{
+    display: none;
+}
+/* ========generation========= */
+.generation-container{
+    padding: 30px 0;
+}
+.generation-container p{
+    font-size: 14px;
+}
+.generation-container h4{
+    text-align: center;
+    font-size: 16px;
+}
+/* =========slidebar=========== */
+.slidebar .content{
+    padding: 20px 0;
+}
+.slidebar-buttons{
+    margin-top: 20px;
+}
+/* =============grid-shop-images============= */
+.grid-shop-images{ 
+grid-template-columns: repeat(1,1fr);
+grid-template-rows:repeat(8,250px);
+}
+/* ==========email section============ */
+.email-section{
+    padding: 30px 0;
+}
+.email-section form a img{
+    width: 60px;
+}
+.email-section button{
+    margin: 10px 0;
+}
+
+
+}
+
